@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.box1 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box2 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box3 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box4 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box5 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box6 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box7 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box8 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+		.box9 {
+			background-color: red;
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			position: absolute;
+		}
+
+		.str1 {
+			display: block;
+		}
+
+		.str2 {
+			display: none;
+		}
+
+		.str3 {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="str1">
+
+		<h1> Очки: <span class="ball"> 0 </span> </h1>
+	<h2> У тебя 9 секунд, чтобы успеть собрать все шарики </h2>
+
+	<div class="box1" style="left: 150px; top: 250px;"> 
+	</div>
+
+	<div class="box2" style="left: 300px; top: 500px;"> 
+	</div>
+
+	<div class="box3" style="left: 600px; top: 600px;"> 
+	</div>
+	
+	<div class="box4" style="left: 800px; top: 100px;"> 
+	</div>
+	
+	<div class="box5" style="left: 1000px; top: 350px;"> 
+	</div>
+	
+	<div class="box6" style="left: 600px; top: 350px;"> 
+	</div>
+	
+	<div class="box7" style="left: 900px; top: 700px;"> 
+	</div>
+	
+	<div class="box8" style="left: 150px; top: 750px;"> 
+	</div>
+	
+	<div class="box9" style="left: 400px; top: 200px;"> 
+	</div>
+
+
+	</div>
+
+	<div class="str2">
+	</div>
+	
+	<div class="str3">
+	</div>
+	
+	<script type="text/javascript">
+		let box1 = document.querySelector('.box1');
+		let box3 = document.querySelector('.box3');
+		let box4 = document.querySelector('.box4');
+		let box6 = document.querySelector('.box6');
+		let box7 = document.querySelector('.box7');
+
+
+
+
+
+		let left1 = 150;
+		console.log(left1);
+
+		let left3 = 600;
+		console.log(left3);
+
+		let left4 = 800;
+		console.log(left4);
+
+		let left6 = 600;
+		console.log(left6);
+
+		let left7 = 900;
+		console.log(left7);
+
+
+
+
+
+
+		let moveBox1 = function() {
+			left1 = left1 + 100;
+			console.log(left1);
+			box1.style.left =  left1 + "px";
+			box1.style.backgroundColor = "#e0a6c1";
+
+		}
+		setInterval(moveBox1,1000);
+
+
+		let moveBox3 = function() {
+			left3 = left3 + 100;
+			console.log(left3);
+			box3.style.left =  left3 + "px";
+			box3.style.backgroundColor = "#a6b2e0";
+
+		}
+		setInterval(moveBox3,1000);
+
+		let moveBox4 = function() {
+			left4 = left4 + 100;
+			console.log(left4);
+			box4.style.left =  left4 + "px";
+			box4.style.backgroundColor = "#e0caa6";
+
+		}
+		setInterval(moveBox4,1000);
+
+		let moveBox6 = function() {
+			left6 = left6 + 100;
+			console.log(left6);
+			box6.style.left =  left6 + "px";
+			box6.style.backgroundColor = "#a6d4e0";
+
+		}
+		setInterval(moveBox6,1000);
+
+		let moveBox7 = function() {
+			left7 = left7 + 100;
+			console.log(left7);
+			box7.style.left =  left7 + "px";
+			box7.style.backgroundColor = "#a6e0a7";
+
+		}
+		setInterval(moveBox7,1000);
+
+
+
+
+
+
+
+
+
+
+
+		let box2 = document.querySelector('.box2');
+		let box5 = document.querySelector('.box5');
+		let box8 = document.querySelector('.box8');
+		let box9 = document.querySelector('.box9');
+
+
+		let top2 = 150;
+		console.log(top2);
+		let top5 = 150;
+		console.log(top5);
+		let top8 = 350;
+		console.log(top8);
+		let top9 = 200;
+		console.log(top9);
+
+
+		let moveBox2 = function() {
+			top2 = top2 + 100;
+			console.log(top2);
+			box2.style.top =  top2 + "px";
+			box2.style.backgroundColor = "#a6e0c2";
+
+		}
+		setInterval(moveBox2,1000);
+
+		let moveBox5 = function() {
+			top5 = top5 + 100;
+			console.log(top5);
+			box5.style.top =  top5 + "px";
+			box5.style.backgroundColor = "#a6e0aa";
+
+		}
+		setInterval(moveBox5,1000);
+
+		let moveBox8 = function() {
+			top8 = top8 + 100;
+			console.log(top8);
+			box8.style.top =  top8 + "px";
+			box8.style.backgroundColor = "#dfe0a6";
+
+		}
+		setInterval(moveBox8,1000);
+
+		let moveBox9 = function() {
+			top9 = top9 + 100;
+			console.log(top9);
+			box9.style.top =  top9 + "px";
+			box9.style.backgroundColor = "#bba6e0";
+
+		}
+		setInterval(moveBox9,1000);
+
+		let balls = 0;
+
+
+
+		box1.onclick = function(){
+			box1.style.display = "none";
+			balls = balls + 1;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			document.querySelector('.ball').innerHTML = balls;
+			
+		}
+
+
+		box2.onclick = function(){
+			box2.style.display = "none";
+			balls = balls + 1;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			document.querySelector('.ball').innerHTML = balls;
+			
+			
+		}
+
+
+
+		box3.onclick = function(){
+			box3.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box4.onclick = function(){
+			box4.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box5.onclick = function(){
+			box5.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box6.onclick = function(){
+			box6.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box7.onclick = function(){
+			box7.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box8.onclick = function(){
+			box8.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+			
+		}
+
+
+		box9.onclick = function(){
+			box9.style.display = "none";
+			balls = balls + 1;
+			document.querySelector('.ball').innerHTML = balls;
+			if (ball = 9) {
+				document.querySelector('.str1').display = "none";
+				document.querySelector('.str2').display = "block";
+
+			}
+			
+		}
+
+
+	</script>
+</body>
+</html>
